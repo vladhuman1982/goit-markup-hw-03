@@ -89,16 +89,6 @@ header .link {
   color: var(--color-blue);
 }
 /* ============================ Фильтры =========================== */
-.button {
-  color: var(--color-black);
-  background-color: var(--bg-color-gray);
-}
-.accent-button:hover,
-.accent-button:focus {
-  color: var(--accent-button-color);
-  background-color: var(--accent-button-bg-color);
-}
-/* =========================== Портфолио =========================== */
 .portfolio-box {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -106,7 +96,36 @@ header .link {
 .filters {
   margin-bottom: 34px;
 }
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filters-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  height: 38px;
+
+  color: var(--color-black);
+  background-color: var(--bg-color-gray);
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--accent-button-color);
+  background-color: var(--accent-button-bg-color);
+}
+/* =========================== Портфолио =========================== */
+.projects {
+  padding-bottom: 20px;
+}
+.projects:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.projects-img {
+  margin-bottom: 20px;
+}
 .title {
+  margin-bottom: 4px;
   letter-spacing: 0.06em;
 
   color: var(--color-black);
