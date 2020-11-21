@@ -21,6 +21,11 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
+.box {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .link {
   text-decoration: none;
 }
@@ -28,18 +33,15 @@ body {
   list-style: none;
   letter-spacing: 0.02em;
 }
-header .link {
-  letter-spacing: 0.02em;
-}
 /* =================== Шапка =========================== */
 header {
   background: var(--bg-color-white);
 }
-.header-container {
-  width: 1207px;
-  height: 80px;
-  padding: 31px 15px;
-  margin: 0 auto;
+header .link {
+  letter-spacing: 0.02em;
+}
+.header-box {
+  padding: 24px 25px;
 }
 /* ==================== logo header and footer ===================== */
 .header-logo,
@@ -97,6 +99,13 @@ header {
   background-color: var(--accent-button-bg-color);
 }
 /* =========================== Портфолио =========================== */
+.portfolio-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters {
+  margin-bottom: 34px;
+}
 .title {
   letter-spacing: 0.06em;
 
@@ -105,13 +114,21 @@ header {
 .text {
   color: var(--color-gray);
 }
-/* ===================== span footer-logo ========================= */
-.footer-logo span {
-  color: var(--color-white);
-}
 /* ===================== footer bg ========================= */
 footer {
   background-color: var(--bg-color-dark);
+}
+.footer-box {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* ===================== footer-logo ========================= */
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo span {
+  color: var(--color-white);
 }
 /* ===================== footer address ========================= */
 address {
@@ -121,10 +138,16 @@ address {
   line-height: 1.71;
 }
 .address {
+  margin-bottom: 9px;
+
   color: var(--color-white);
 }
 /* ===================== footer email ========================= */
-.footer-email,
+.footer-email {
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
 }

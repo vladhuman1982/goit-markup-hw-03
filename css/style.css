@@ -19,7 +19,7 @@ body {
   letter-spacing: 0.03em;
 }
 .box {
-  width: 1207px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -84,19 +84,18 @@ header .link {
 .header-tel:focus {
   color: var(--accent-color);
 }
-.hero {
-  background: var(--bg-color-dark);
-}
 /* ============================= current page ====================== */
 .page {
   color: var(--color-blue);
 }
 /* ================== Эффективные решения для вашего бизнеса ================ */
+.hero {
+  background: var(--bg-color-dark);
+}
 .hero-box {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
