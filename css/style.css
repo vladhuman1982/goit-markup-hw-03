@@ -1,0 +1,241 @@
+:root {
+  --accent-color: #2196f3;
+  --color-black: #212121;
+  --color-gray: #757575;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --bg-color-dark: #2f303a;
+  --bg-color-blue: #2196f3;
+  --bg-color-white: #ffffff;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+.box {
+  width: 1207px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  letter-spacing: 0.02em;
+}
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* =================== Шапка =========================== */
+header {
+  background: var(--bg-color-white);
+}
+header .link {
+  letter-spacing: 0.02em;
+}
+.header-box {
+  padding: 24px 25px;
+}
+/* ==================== logo header and footer ===================== */
+.header-logo,
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--color-blue);
+}
+/* ==================== span header-logo ===================== */
+.header-logo span {
+  color: #000000;
+}
+
+/* ========================= Навигационные ссылки ===================== */
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--color-black);
+}
+/* ====================== email tel ============================ */
+.header-email,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--color-gray);
+}
+/* ==================== hover, focus в шапке ===================== */
+.header-link:hover,
+.header-link:focus,
+.header-email:hover,
+.header-email:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.hero {
+  background: var(--bg-color-dark);
+}
+/* ============================= current page ====================== */
+.page {
+  color: var(--color-blue);
+}
+/* ================== Эффективные решения для вашего бизнеса ================ */
+.hero-box {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+  background: var(--bg-color-dark);
+}
+/* =========================== Кнопка заказать услугу ============================= */
+.hero-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--color-white);
+  background-color: var(--bg-color-blue);
+}
+/* ===== Внимание к деталям, Пунктуальность, Планирование, Современные технологии ====== */
+.advantages .list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+}
+.advantages-text {
+  margin-bottom: 94px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-gray);
+}
+/* =============================== Чем мы занимаемся ======================================== */
+.doing-box {
+  padding-bottom: 94px;
+}
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--color-black);
+}
+/* ==================================== Наша команда ====================================== */
+.team-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--color-black);
+}
+/* ========================================== Images ============================================== */
+.team-img {
+  margin-bottom: 30px;
+}
+/* ============ Игорь Демьяненко, Ольга Репина, Николай Тарасов, Михаил Ермаков=============================*/
+.team-list-title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--color-black);
+}
+/* =================== Product Designer, Frontend Developer, Marketing, UI Designer ==================*/
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--color-gray);
+}
+/* ===================== footer bg ========================= */
+footer {
+  background-color: var(--bg-color-dark);
+}
+.footer-box {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* ===================== footer-logo ========================= */
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo span {
+  color: var(--color-white);
+}
+/* ===================== footer address ========================= */
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address {
+  margin-bottom: 9px;
+
+  color: var(--color-white);
+}
+/* ===================== footer email ========================= */
+.footer-email {
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}

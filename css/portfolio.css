@@ -1,0 +1,130 @@
+:root {
+  --accent-color: #2196f3;
+  --accent-button-color: #ffffff;
+  --accent-button-bg-color: #2196f3;
+  --color-black: #212121;
+  --color-gray: #757575;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --bg-color-dark: #2f303a;
+  --bg-color-blue: #2196f3;
+  --bg-color-white: #ffffff;
+  --bg-color-gray: #f5f4fa;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  letter-spacing: 0.02em;
+}
+header .link {
+  letter-spacing: 0.02em;
+}
+/* =================== Шапка =========================== */
+header {
+  background: var(--bg-color-white);
+}
+.header-container {
+  width: 1207px;
+  height: 80px;
+  padding: 31px 15px;
+  margin: 0 auto;
+}
+/* ==================== logo header and footer ===================== */
+.header-logo,
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--color-blue);
+}
+/* ==================== span header-logo ===================== */
+.header-logo span {
+  color: #000000;
+}
+
+/* ========================= Навигационные ссылки ===================== */
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--color-black);
+}
+/* ====================== email tel ============================ */
+.header-email,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--color-gray);
+}
+/* ==================== hover, focus в шапке ===================== */
+.header-link:hover,
+.header-link:focus,
+.header-email:hover,
+.header-email:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+/* ============================= current page ====================== */
+.page {
+  color: var(--color-blue);
+}
+/* ============================ Фильтры =========================== */
+.button {
+  color: var(--color-black);
+  background-color: var(--bg-color-gray);
+}
+.accent-button:hover,
+.accent-button:focus {
+  color: var(--accent-button-color);
+  background-color: var(--accent-button-bg-color);
+}
+/* =========================== Портфолио =========================== */
+.title {
+  letter-spacing: 0.06em;
+
+  color: var(--color-black);
+}
+.text {
+  color: var(--color-gray);
+}
+/* ===================== span footer-logo ========================= */
+.footer-logo span {
+  color: var(--color-white);
+}
+/* ===================== footer bg ========================= */
+footer {
+  background-color: var(--bg-color-dark);
+}
+/* ===================== footer address ========================= */
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address {
+  color: var(--color-white);
+}
+/* ===================== footer email ========================= */
+.footer-email,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
