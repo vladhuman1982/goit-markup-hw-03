@@ -39,8 +39,6 @@ header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-
-  background: var(--bg-color-white);
 }
 header .link {
   letter-spacing: 0.02em;
@@ -73,7 +71,7 @@ header .link {
   color: #000000;
 }
 
-/* ========================= Навигационные ссылки ===================== */
+/* ========================= nav ===================== */
 .header-item {
   display: flex;
 }
@@ -140,7 +138,6 @@ header .link {
   flex-wrap: wrap;
 }
 .projects-item {
-  padding-bottom: 20px;
   margin-bottom: 30px;
   margin-right: 30px;
   border: 1px solid #eeeeee;
@@ -154,8 +151,7 @@ header .link {
   display: block;
 }
 .group {
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 20px 24px;
 }
 .title {
   margin-bottom: 4px;
@@ -169,14 +165,12 @@ header .link {
 .text {
   color: var(--color-gray);
 }
-/* ========================= footer box ============================ */
+/* ========================= footer ============================ */
 footer {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-/* ===================== footer bg ========================= */
-footer {
+
   background-color: var(--bg-color-dark);
 }
 /* ===================== footer-logo ========================= */
