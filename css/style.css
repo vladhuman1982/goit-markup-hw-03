@@ -32,6 +32,12 @@ body {
 }
 /* =================== header =========================== */
 header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #000000;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   background: var(--bg-color-white);
 }
 header .link {
@@ -39,12 +45,13 @@ header .link {
 }
 .header-box {
   display: flex;
-  padding: 24px 25px;
 }
 .header-flex {
   display: flex;
-  margin-left: auto;
   align-items: center;
+}
+.margin {
+  margin-left: auto;
 }
 /* ==================== header logo ===================== */
 .header-address + .header-address {
@@ -99,11 +106,10 @@ header .link {
 }
 /* ================== Эффективные решения для вашего бизнеса ================ */
 .hero {
-  background: var(--bg-color-dark);
-}
-.hero-box {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background: var(--bg-color-dark);
 }
 .hero-title {
   margin-top: 0;
@@ -135,10 +141,12 @@ header .link {
   letter-spacing: 0.06em;
 }
 /* ===== Внимание к деталям, Пунктуальность, Планирование, Современные технологии ====== */
-.advantages-flex {
-  display: flex;
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.advantages-flex {
+  display: flex;
 }
 .advantages-item {
   width: 270px;
@@ -162,11 +170,11 @@ header .link {
   line-height: 1.71;
 }
 /* =============================== Чем мы занимаемся ======================================== */
+.doing {
+  padding-bottom: 94px;
+}
 .doing-flex {
   display: flex;
-}
-.doing-box {
-  padding-bottom: 94px;
 }
 .doing-title {
   margin-bottom: 50px;
@@ -183,12 +191,12 @@ header .link {
   display: block;
 }
 /* ==================================== Наша команда ====================================== */
-.team-list {
-  display: flex;
-}
-.team-box {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
 }
 .team-title {
   margin-bottom: 50px;
@@ -225,7 +233,7 @@ header .link {
   text-align: center;
 }
 /* ========================= footer box ============================ */
-.footer-box {
+footer {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
