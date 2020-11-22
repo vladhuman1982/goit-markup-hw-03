@@ -23,7 +23,8 @@ body {
 }
 .box {
   width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 15px;
 }
 .link {
@@ -137,15 +138,17 @@ header .link {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
 }
 .projects-item {
-  flex-basis: calc(100% / 3 - 30px);
   padding-bottom: 20px;
   margin-bottom: 30px;
   margin-right: 30px;
   border: 1px solid #eeeeee;
+
+  width: calc((100% - 60px) / 3);
+}
+.projects-item:nth-child(3n) {
+  margin-right: 0;
 }
 .projects-img {
   display: block;
