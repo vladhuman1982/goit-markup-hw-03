@@ -137,10 +137,14 @@ header .link {
 /* ===== Внимание к деталям, Пунктуальность, Планирование, Современные технологии ====== */
 .advantages-flex {
   display: flex;
-}
-.advantages .list {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.advantages-item {
+  width: 270px;
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
 }
 .advantages-title {
   margin-bottom: 10px;
@@ -152,8 +156,6 @@ header .link {
   text-transform: uppercase;
 }
 .advantages-text {
-  margin-bottom: 94px;
-
   color: var(--color-gray);
   font-weight: 400;
   font-size: 14px;
