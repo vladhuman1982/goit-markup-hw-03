@@ -33,7 +33,7 @@ body {
   list-style: none;
   letter-spacing: 0.02em;
 }
-/* =================== Шапка =========================== */
+/* =================== header =========================== */
 header {
   background: var(--bg-color-white);
 }
@@ -41,17 +41,26 @@ header .link {
   letter-spacing: 0.02em;
 }
 .header-box {
+  display: flex;
   padding: 24px 25px;
 }
-/* ==================== logo header and footer ===================== */
-.header-logo,
-.footer-logo {
+.header-flex {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+/* ==================== header logo ===================== */
+.header-address + .header-address {
+  margin-left: 50px;
+}
+.header-logo {
+  margin-right: 93px;
+
+  color: var(--color-blue);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
-  color: var(--color-blue);
 }
 /* ==================== span header-logo ===================== */
 .header-logo span {
@@ -59,42 +68,49 @@ header .link {
 }
 
 /* ========================= Навигационные ссылки ===================== */
-.header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-
-  color: var(--color-black);
+.header-item {
+  display: flex;
 }
-/* ====================== email tel ============================ */
-.header-email,
-.header-tel {
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link {
+  color: var(--color-black);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+/* ============================= current page ====================== */
+.page {
+  display: block;
 
+  color: var(--color-blue);
+}
+/* ====================== header address ============================ */
+.header-address {
   color: var(--color-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 /* ==================== hover, focus в шапке ===================== */
 .header-link:hover,
 .header-link:focus,
-.header-email:hover,
-.header-email:focus,
-.header-tel:hover,
-.header-tel:focus {
+.header-address:hover,
+.header-address:focus {
   color: var(--accent-color);
 }
-/* ============================= current page ====================== */
-.page {
-  color: var(--color-blue);
-}
 /* ============================ Фильтры =========================== */
+}
 .portfolio-box {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .filters {
+  display: flex;
+  justify-content: center;
   margin-bottom: 34px;
+
 }
 .filters-item:not(:last-child) {
   margin-right: 8px;
@@ -114,37 +130,60 @@ header .link {
   color: var(--accent-button-color);
   background-color: var(--accent-button-bg-color);
 }
-/* =========================== Портфолио =========================== */
+/* =========================== projects =========================== */
 .projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+.projects-item {
+  flex-basis: calc(100% / 3 - 30px);
   padding-bottom: 20px;
 }
-.projects:nth-child(-n + 6) {
+.projects-item {
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 .projects-img {
-  margin-bottom: 20px;
+  display: block;
+}
+.group {
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .title {
   margin-bottom: 4px;
-  letter-spacing: 0.06em;
-
+  
   color: var(--color-black);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .text {
   color: var(--color-gray);
 }
-/* ===================== footer bg ========================= */
-footer {
-  background-color: var(--bg-color-dark);
-}
+/* ========================= footer box ============================ */
 .footer-box {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/* ===================== footer bg ========================= */
+footer {
+  background-color: var(--bg-color-dark);
+}
 /* ===================== footer-logo ========================= */
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
+
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .footer-logo span {
   color: var(--color-white);
@@ -157,16 +196,16 @@ address {
   line-height: 1.71;
 }
 .address {
+  display: block;
   margin-bottom: 9px;
 
   color: var(--color-white);
 }
-/* ===================== footer email ========================= */
-.footer-email {
+/* ===================== footer email tel ========================= */
+.footer-address:not(:last-child) {
   margin-bottom: 9px;
-
-  color: rgba(255, 255, 255, 0.6);
 }
-.footer-tel {
+.footer-address {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 }

@@ -30,10 +30,7 @@ body {
   list-style: none;
   letter-spacing: 0.02em;
 }
-.list-item:not(:last-child) {
-  margin-right: 30px;
-}
-/* =================== Шапка =========================== */
+/* =================== header =========================== */
 header {
   background: var(--bg-color-white);
 }
@@ -41,17 +38,26 @@ header .link {
   letter-spacing: 0.02em;
 }
 .header-box {
+  display: flex;
   padding: 24px 25px;
 }
-/* ==================== logo header and footer ===================== */
-.header-logo,
-.footer-logo {
+.header-flex {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+/* ==================== header logo ===================== */
+.header-address + .header-address {
+  margin-left: 50px;
+}
+.header-logo {
+  margin-right: 93px;
+
+  color: var(--color-blue);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
-  color: var(--color-blue);
 }
 /* ==================== span header-logo ===================== */
 .header-logo span {
@@ -59,34 +65,37 @@ header .link {
 }
 
 /* ========================= Навигационные ссылки ===================== */
-.header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-
-  color: var(--color-black);
+.header-item {
+  display: flex;
 }
-/* ====================== email tel ============================ */
-.header-email,
-.header-tel {
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link {
+  color: var(--color-black);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+/* ============================= current page ====================== */
+.page {
+  display: block;
 
+  color: var(--color-blue);
+}
+/* ====================== header address ============================ */
+.header-address {
   color: var(--color-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 /* ==================== hover, focus в шапке ===================== */
 .header-link:hover,
 .header-link:focus,
-.header-email:hover,
-.header-email:focus,
-.header-tel:hover,
-.header-tel:focus {
+.header-address:hover,
+.header-address:focus {
   color: var(--accent-color);
-}
-/* ============================= current page ====================== */
-.page {
-  color: var(--color-blue);
 }
 /* ================== Эффективные решения для вашего бизнеса ================ */
 .hero {
@@ -100,15 +109,14 @@ header .link {
   margin-top: 0;
   margin-bottom: 30px;
 
+  color: var(--color-white);
+  background: var(--bg-color-dark);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  color: var(--color-white);
-  background: var(--bg-color-dark);
 }
 /* =========================== Кнопка заказать услугу ============================= */
 .hero-btn {
@@ -118,16 +126,18 @@ header .link {
   min-width: 200px;
   height: 50px;
 
+  color: var(--color-white);
+  background-color: var(--bg-color-blue);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
-
-  color: var(--color-white);
-  background-color: var(--bg-color-blue);
 }
 /* ===== Внимание к деталям, Пунктуальность, Планирование, Современные технологии ====== */
+.advantages-flex {
+  display: flex;
+}
 .advantages .list {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -135,34 +145,45 @@ header .link {
 .advantages-title {
   margin-bottom: 10px;
 
+  color: var(--color-black);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
-  color: var(--color-black);
 }
 .advantages-text {
   margin-bottom: 94px;
 
+  color: var(--color-gray);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--color-gray);
 }
 /* =============================== Чем мы занимаемся ======================================== */
+.doing-flex {
+  display: flex;
+}
 .doing-box {
   padding-bottom: 94px;
 }
 .doing-title {
+  margin-bottom: 50px;
+  color: var(--color-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
-  color: var(--color-black);
+}
+.doing-item:not(:last-child) {
+  margin-right: 30px;
+}
+.doing-img {
+  display: block;
 }
 /* ==================================== Наша команда ====================================== */
+.team-list {
+  display: flex;
+}
 .team-box {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -170,12 +191,14 @@ header .link {
 .team-title {
   margin-bottom: 50px;
 
+  color: var(--color-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
-  color: var(--color-black);
+}
+.time-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* ========================================== Images ============================================== */
 .team-img {
@@ -185,34 +208,40 @@ header .link {
 .team-list-title {
   margin-bottom: 10px;
 
+  color: var(--color-black);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  color: var(--color-black);
 }
 /* =================== Product Designer, Frontend Developer, Marketing, UI Designer ==================*/
 .team-text {
+  color: var(--color-gray);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  color: var(--color-gray);
 }
-/* ===================== footer bg ========================= */
-footer {
-  background-color: var(--bg-color-dark);
-}
+/* ========================= footer box ============================ */
 .footer-box {
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/* ===================== footer bg ========================= */
+footer {
+  background-color: var(--bg-color-dark);
+}
 /* ===================== footer-logo ========================= */
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
+
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .footer-logo span {
   color: var(--color-white);
@@ -225,16 +254,16 @@ address {
   line-height: 1.71;
 }
 .address {
+  display: block;
   margin-bottom: 9px;
 
   color: var(--color-white);
 }
-/* ===================== footer email ========================= */
-.footer-email {
+/* ===================== footer email tel ========================= */
+.footer-address:not(:last-child) {
   margin-bottom: 9px;
-
-  color: rgba(255, 255, 255, 0.6);
 }
-.footer-tel {
+.footer-address {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 }
